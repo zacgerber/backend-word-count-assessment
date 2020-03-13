@@ -1,30 +1,28 @@
 # WordCount
 
-In this assignment you will use your knowledge of Python basic strings,
-arithmetic, file reading, and dicts to create a command line utility to count
-the words in a text file ([small.txt](./small.txt) and [alice.txt](./alice.txt)).
+In this assignment you will use your knowledge of Python basic strings, arithmetic, file reading, and dictionaries to create a command line utility to count the words in a text file ([small.txt](./books/small.txt) and [alice.txt](./books/alice.txt)).
 
 Complete the command-line python program named `wordcount.py` so that it will count the number of words in a text file, and also handle optional flags named `--count` and `--topcount`. The assignment instructions are also found within the `wordcount.py` file in this repo.
 
 ## Example
 ```console
 $ python wordcount.py --count alice.txt
-"'tis : 1
-"--said : 1
-"come : 2
-"coming : 1
-"edwin : 1
-"french, : 1
-"he's : 1
-"how : 2
-"i : 8
-"i'll : 2
-"it" : 2
-"keep : 1
-"let : 1
-"much : 1
-"poison" : 1
-"purpose"?' : 1
+'tis : 1
+--said : 1
+come : 2
+coming : 1
+edwin : 1
+french, : 1
+he's : 1
+how : 2
+i : 8
+i'll : 2
+it" : 2
+keep : 1
+let : 1
+much : 1
+poison" : 1
+purpose"?' : 1
 ```
 
 ```console
@@ -59,7 +57,7 @@ For the `--count` flag, implement a `print_words(filename)` function that counts
     word2 : count2
     ...
   
-Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters which is fine). Store all the words as lowercase, so 'The' and 'the' count as the same word.
+Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters which is fine -- do not strip out punctuation). Store all the words as lowercase, so 'The' and 'the' count as the same word.
 
 ## Part B
 For the `--topcount` flag, implement a `print_top()` function which is similar to `print_words()` but which prints just the top 20 most common words sorted so the **most common** word is first, then the next most common, and so on.
