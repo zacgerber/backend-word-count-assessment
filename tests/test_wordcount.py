@@ -40,7 +40,7 @@ class Capturing(list):
 
 class TestWordcount(unittest.TestCase):
     def setUp(self):
-        module_name = 'soln.wordcount'
+        module_name = 'wordcount'
         """import the module(s) under test, in the context of this test fixture"""
         try:
             self.wc = importlib.import_module(module_name)
