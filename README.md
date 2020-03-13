@@ -5,28 +5,28 @@ In this assignment you will use your knowledge of Python basic strings, arithmet
 Complete the command-line python program named `wordcount.py` so that it will count the number of words in a text file, and also handle optional flags named `--count` and `--topcount`. The assignment instructions are also found within the `wordcount.py` file in this repo.
 
 ## Example
-```console
-$ python wordcount.py --count alice.txt
-'tis : 1
---said : 1
-come : 2
-coming : 1
-edwin : 1
-french, : 1
-he's : 1
-how : 2
-i : 8
-i'll : 2
-it" : 2
-keep : 1
-let : 1
-much : 1
-poison" : 1
-purpose"?' : 1
+```
+$ python wordcount.py --count books/alice.txt
+"'tis : 1
+"--said : 1
+"come : 2
+"coming : 1
+"edwin : 1
+"french, : 1
+"he's : 1
+"how : 2
+"i : 8
+"i'll : 2
+"it" : 2
+"keep : 1
+"let : 1
+"much : 1
+"poison" : 1
+"purpose"?' : 1
 ```
 
 ```console
-$ python wordcount.py --topcount alice.txt
+$ python wordcount.py --topcount books/alice.txt
 Top 20 most frequent words in alice.txt
 the : 1605
 and : 766
