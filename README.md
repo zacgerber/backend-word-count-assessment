@@ -29,7 +29,7 @@ $ python wordcount.py --count books/alice.txt
 
 ```console
 $ python wordcount.py --topcount books/alice.txt
-Top 20 most frequent words in alice.txt
+Top 20 most frequent words in books/alice.txt
 the : 1605
 and : 766
 to : 706
