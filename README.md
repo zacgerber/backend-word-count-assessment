@@ -53,7 +53,7 @@ all : 155
 ```
 
 ## Part A
-For the `--count` flag, implement a `print_words(filename)` function that counts how often each word appears in the text and prints:
+For the `--count` flag, implement a `print_words()` function that counts how often each word appears in the text and prints:
 
     word1 : count1
     word2 : count2
