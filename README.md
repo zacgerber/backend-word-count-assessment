@@ -2,7 +2,7 @@
 
 # WordCount
 
-In this assignment you will use your knowledge of Python basic strings, arithmetic, file reading, and dictionaries to create a command line utility to count the words in a text file ([small.txt](./books/small.txt) and [alice.txt](./books/alice.txt)).
+In this assignment you will use your knowledge of Python basic strings, arithmetic, file reading, and dictionaries to create a command line utility to count the words in the text files in the `books` directory -- ([small.txt](./books/small.txt) and [alice.txt](./books/alice.txt)).
 
 Complete the command-line python program named `wordcount.py` so that it will count the number of words in a text file using optional flags named `--count` and `--topcount`.
 
