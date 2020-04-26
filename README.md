@@ -66,7 +66,7 @@ For the `--topcount` flag, implement a `print_top()` function similar to `print_
 
 
 # Debugging
-Use your VS Code IDE to set up a debug session, and single-step your `wordcount.py` &mdash; Create two launch.json debug configurations: One with optional `--count` argument and one with `--topcount` argument.
+Use your VS Code IDE to set up a debug session and single-step your `wordcount.py` &mdash; Create two launch.json debug configurations: One with optional `--count` argument and one with `--topcount` argument.
 
 
 ## PR (Pull Request) Workflow for this assignment
