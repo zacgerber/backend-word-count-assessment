@@ -59,7 +59,7 @@ For the `--count` flag, implement a `print_words()` function that counts how oft
     word2 : count2
     ...
   
-Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters which is fine -- do not strip out punctuation). Store all the words as lowercase (i.e., 'The' and 'the' count as the same word).
+Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters, which is fine -- do not strip out punctuation). Store all the words as lowercase (i.e., 'The' and 'the' count as the same word).
 
 ## Part B
 For the `--topcount` flag, implement a `print_top()` function which is similar to `print_words()` but which prints just the top 20 most common words sorted so the **most common** word is first, then the next most common, and so on.
