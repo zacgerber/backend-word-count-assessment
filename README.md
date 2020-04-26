@@ -2,7 +2,7 @@
 
 # WordCount
 
-In this assignment you will use your knowledge of Python basic strings, arithmetic, file reading, and dictionaries to create a command line utility to count the words in the text files in the `books` directory -- ([small.txt](./books/small.txt) and [alice.txt](./books/alice.txt)).
+In this assignment you will use your knowledge of Python basic strings, arithmetic, file reading, and dictionaries to create a command line utility to count the words in the text files in the `books` directory &mdash; ([small.txt](./books/small.txt) and [alice.txt](./books/alice.txt)).
 
 Complete the command-line python program named `wordcount.py` so that it will count the number of words in a text file using optional flags named `--count` and `--topcount`.
 
@@ -59,14 +59,14 @@ For the `--count` flag, implement a `print_words()` function that counts how oft
     word2 : count2
     ...
   
-Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters, which is fine -- do not strip out punctuation). Store all the words as lowercase (i.e., 'The' and 'the' count as the same word).
+Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters, which is fine &mdash; do not strip out punctuation). Store all the words as lowercase (i.e., 'The' and 'the' count as the same word).
 
 ## Part B
 For the `--topcount` flag, implement a `print_top()` function similar to `print_words()`, but which prints just the top 20 most common words sorted so the **most common** word is first, then the next most common, and so on.
 
 
 # Debugging
-Use your VS Code IDE to set up a debug session, and single-step your `wordcount.py` -- Create two launch.json debug configurations: One with optional `--count` argument and one with `--topcount` argument.
+Use your VS Code IDE to set up a debug session, and single-step your `wordcount.py` &mdash; Create two launch.json debug configurations: One with optional `--count` argument and one with `--topcount` argument.
 
 
 ## PR (Pull Request) Workflow for this assignment
