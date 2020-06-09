@@ -25,46 +25,45 @@ should return a dictionary with words as keys, and their counts as values.
 
 # Your name, plus anyone who helped you with this assignment
 # Give credit where credit is due.
-__author__ = "Zac Gerber, helped by micheal Demory and the walk through wordcount demo"
+__author__ = """Zac Gerber, helped by Micheal Demory
+and the walk through wordcount demo
+"""
 
 import sys
 
 def make_word_dict(filename):
-    word_dict ={}
+    word_dict = {}
     with open(filename) as f:
         for line in f.readlines():
             for word in line.lower().split():
-                word_dict.setdefault(word, 0)
-                word_dict[word]+= 1
-                word_dict[word] += 1
+                if word in word_dict:
+                    word_dict[word] += 1
+                else:
+                    word_dict[word] = 1
     return word_dict
 
 
 def create_word_dict(filename):
     """Returns a word/count dict for the given file."""
     # Your code here
-    return
+    pass
 
 
 def print_words(filename):
-
     new_dict = make_word_dict(filename)
     dict_items = new_dict.items()
     sorted_items = sorted(dict_items)
     for word in sorted_items:
         print(str(word[0]) + ' : ' + str(word[1]))
-    
-    
 
 
 def print_top(filename):
     new_dict = make_word_dict(filename)
     dict_items = new_dict.items()
-    sorted_items = sorted(dict_items, key=lambda x: x[1], reverse =True)
-    for word in sorted_items[:20]:
-        print(str(word[0]) + ' : ' + str(word[1]))
+    sorted_items = sorted(dict_items, key=lambda x: x[1], reverse=True)
+    for i, word in enumerate(sorted_items[:20]):
+        print(str(i + 1) + ". " + str(word[0]) + ' : ' + str(word[1]))
 
-    
 
 
 # This basic command line argument parsing code is provided and calls
